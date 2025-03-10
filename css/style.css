@@ -308,7 +308,9 @@ line-height: 1;
 .hidden {
     display: none; /* Hide the additional content initially */
   }
-  
+  #more-content{
+    color: var(--second-color);
+  }
   #more-button {
     background-color: #0073b1;
     color: white;
