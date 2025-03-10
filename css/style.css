@@ -300,7 +300,7 @@ line-height: 1;
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -330,6 +330,9 @@ line-height: 1;
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+    min-height: 300px; /* Ensure a minimum height */
+    display: flex;
+    flex-direction: column;
 }
 .row img{
     width: 100%;
