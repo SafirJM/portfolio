@@ -312,19 +312,23 @@
 
 <!--custom js link-->
 <!-- <script type="text/javascript" src="js/script.js"></script>     -->
-<script src="js/script.js">
-    document.getElementById("more-button").addEventListener("click", function () {
-  const moreContent = document.getElementById("more-content");
-  const button = document.getElementById("more-button");
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("more-button").addEventListener("click", function () {
+            const moreContent = document.getElementById("more-content");
+            const button = document.getElementById("more-button");
 
-  if (moreContent.classList.contains("hidden")) {
-    moreContent.classList.remove("hidden");
-    button.textContent = "Less";
-  } else {
-    moreContent.classList.add("hidden");
-    button.textContent = "More";
-  }
-});
+            if (moreContent.classList.contains("hidden")) {
+                moreContent.classList.remove("hidden");
+                button.textContent = "Less";
+            } else {
+                moreContent.classList.add("hidden");
+                button.textContent = "More";
+            }
+        });
+    });
 </script>
+
 </body>
 </html>
